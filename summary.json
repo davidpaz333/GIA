@@ -1,0 +1,65 @@
+{
+  "exit_ok": true,
+  "duration_seconds": 4.103,
+  "summary": {
+    "passed": 10,
+    "total": 10,
+    "collected": 10
+  },
+  "hypothesis_profile": {
+    "derandomize": true,
+    "max_examples": 200
+  },
+  "tests": [
+    {
+      "name": "test_lww_element_set.py::test_merge_is_commutative",
+      "outcome": "passed",
+      "duration_seconds": 0.5362
+    },
+    {
+      "name": "test_lww_element_set.py::test_merge_is_associative",
+      "outcome": "passed",
+      "duration_seconds": 0.5642
+    },
+    {
+      "name": "test_lww_element_set.py::test_merge_is_idempotent",
+      "outcome": "passed",
+      "duration_seconds": 0.3102
+    },
+    {
+      "name": "test_lww_element_set.py::test_merge_is_monotonic",
+      "outcome": "passed",
+      "duration_seconds": 0.4871
+    },
+    {
+      "name": "test_lww_element_set.py::test_concurrent_add_and_remove_same_element_add_wins_on_strict_later_timestamp",
+      "outcome": "passed",
+      "duration_seconds": 0.0003
+    },
+    {
+      "name": "test_pn_counter.py::test_merge_is_commutative",
+      "outcome": "passed",
+      "duration_seconds": 0.377
+    },
+    {
+      "name": "test_pn_counter.py::test_merge_is_associative",
+      "outcome": "passed",
+      "duration_seconds": 0.384
+    },
+    {
+      "name": "test_pn_counter.py::test_merge_is_idempotent",
+      "outcome": "passed",
+      "duration_seconds": 0.3579
+    },
+    {
+      "name": "test_pn_counter.py::test_merge_is_monotonic",
+      "outcome": "passed",
+      "duration_seconds": 0.381
+    },
+    {
+      "name": "test_pn_counter.py::test_value_after_merge_matches_independent_updates",
+      "outcome": "passed",
+      "duration_seconds": 0.6364
+    }
+  ]
+}

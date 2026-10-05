@@ -1,0 +1,17 @@
+# Entorno virtual (específico de cada máquina)
+.venv/
+
+# Cachés de Python y de las herramientas
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+
+# Salida cruda de pytest-json-report (muy verbosa y cambia en cada ejecución)
+results.json
+
+# Credenciales locales, si en el futuro se mueven a un .env
+.env
+.idea/
+.idea/
+.idea/
