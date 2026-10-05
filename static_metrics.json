@@ -1,0 +1,260 @@
+{
+  "tools": {
+    "radon": "6.0.1",
+    "ruff": "0.16.10"
+  },
+  "radon": {
+    "pn_counter.py": {
+      "maintainability_index": 69.96,
+      "maintainability_rank": "A",
+      "blocks_analyzed": 8,
+      "average_complexity": 3.25,
+      "max_complexity": 6,
+      "blocks": [
+        {
+          "kind": "C",
+          "name": "PNCounter",
+          "lineno": 24,
+          "complexity": 4,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.__post_init__",
+          "lineno": 36,
+          "complexity": 6,
+          "rank": "B"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.increment",
+          "lineno": 49,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.decrement",
+          "lineno": 54,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.value",
+          "lineno": 59,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.__le__",
+          "lineno": 64,
+          "complexity": 5,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.merge",
+          "lineno": 73,
+          "complexity": 4,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "PNCounter.__eq__",
+          "lineno": 84,
+          "complexity": 4,
+          "rank": "A"
+        }
+      ]
+    },
+    "lww_element_set.py": {
+      "maintainability_index": 49.75,
+      "maintainability_rank": "A",
+      "blocks_analyzed": 10,
+      "average_complexity": 2.5,
+      "max_complexity": 7,
+      "blocks": [
+        {
+          "kind": "C",
+          "name": "_Clock",
+          "lineno": 42,
+          "complexity": 2,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "_Clock.now",
+          "lineno": 50,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "C",
+          "name": "LWWElementSet",
+          "lineno": 55,
+          "complexity": 3,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.add",
+          "lineno": 64,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.remove",
+          "lineno": 69,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.lookup",
+          "lineno": 81,
+          "complexity": 7,
+          "rank": "B"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.elements",
+          "lineno": 93,
+          "complexity": 4,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.merge",
+          "lineno": 100,
+          "complexity": 1,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.__le__",
+          "lineno": 107,
+          "complexity": 2,
+          "rank": "A"
+        },
+        {
+          "kind": "M",
+          "name": "LWWElementSet.__eq__",
+          "lineno": 110,
+          "complexity": 3,
+          "rank": "A"
+        }
+      ]
+    }
+  },
+  "ruff": {
+    "rules_selected": "E,F,W,B,SIM,C90,PL",
+    "total": 12,
+    "by_code": {
+      "B905": 4,
+      "E501": 2,
+      "PLW1641": 2,
+      "W291": 4
+    },
+    "violations": [
+      {
+        "file": "lww_element_set.py",
+        "code": "PLW1641",
+        "name": "eq-without-hash",
+        "line": 55,
+        "message": "Object does not implement `__hash__` method",
+        "fix_applicability": null
+      },
+      {
+        "file": "lww_element_set.py",
+        "code": "E501",
+        "name": "line-too-long",
+        "line": 74,
+        "message": "Line too long (92 > 88)",
+        "fix_applicability": null
+      },
+      {
+        "file": "lww_element_set.py",
+        "code": "W291",
+        "name": "trailing-whitespace",
+        "line": 74,
+        "message": "Trailing whitespace",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "lww_element_set.py",
+        "code": "W291",
+        "name": "trailing-whitespace",
+        "line": 75,
+        "message": "Trailing whitespace",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "lww_element_set.py",
+        "code": "W291",
+        "name": "trailing-whitespace",
+        "line": 76,
+        "message": "Trailing whitespace",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "lww_element_set.py",
+        "code": "W291",
+        "name": "trailing-whitespace",
+        "line": 79,
+        "message": "Trailing whitespace",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "lww_element_set.py",
+        "code": "E501",
+        "name": "line-too-long",
+        "line": 80,
+        "message": "Line too long (107 > 88)",
+        "fix_applicability": null
+      },
+      {
+        "file": "pn_counter.py",
+        "code": "PLW1641",
+        "name": "eq-without-hash",
+        "line": 24,
+        "message": "Object does not implement `__hash__` method",
+        "fix_applicability": null
+      },
+      {
+        "file": "pn_counter.py",
+        "code": "B905",
+        "name": "zip-without-explicit-strict",
+        "line": 67,
+        "message": "`zip()` without an explicit `strict=` parameter",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "pn_counter.py",
+        "code": "B905",
+        "name": "zip-without-explicit-strict",
+        "line": 68,
+        "message": "`zip()` without an explicit `strict=` parameter",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "pn_counter.py",
+        "code": "B905",
+        "name": "zip-without-explicit-strict",
+        "line": 79,
+        "message": "`zip()` without an explicit `strict=` parameter",
+        "fix_applicability": "unsafe"
+      },
+      {
+        "file": "pn_counter.py",
+        "code": "B905",
+        "name": "zip-without-explicit-strict",
+        "line": 80,
+        "message": "`zip()` without an explicit `strict=` parameter",
+        "fix_applicability": "unsafe"
+      }
+    ]
+  }
+}
