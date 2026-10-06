@@ -1,0 +1,12 @@
+{
+  "litellm_version": "1.82.6",
+  "model": "qwen2.5-coder:1.5b",
+  "prompt": "Implementa en Python un G-Counter (CRDT de solo incremento) como una clase con los métodos increment(), value() y merge(other). Responde solo con código.",
+  "latency_seconds": 20.04,
+  "prompt_tokens": 69,
+  "completion_tokens": 212,
+  "total_tokens": 281,
+  "completion_tokens_per_second": 10.58,
+  "cost_usd": 0.0,
+  "response": "```python\nclass GCounter:\n    def __init__(self, initial_value=0):\n        self.value = initial_value\n\n    def increment(self):\n        self.value += 1\n\n    def value(self):\n        return self.value\n\n    def merge(self, other):\n        if isinstance(other, GCounter):\n            self.value += other.value\n        else:\n            raise ValueError(\"Can only merge with another GCounter instance\")\n```\n\nEste código define una clase `GCounter` que implementa un G-Counter (CRDT de solo incremento). El G-Counter es un modelo de concurrencia que permite incrementar un valor de manera atomica. La clase tiene los siguientes métodos:\n\n- `increment()`: Incrementa el valor del G-Counter en 1.\n- `value()`: Devuelve el valor actual del G-Counter.\n- `merge(other)`: Combina el valor del G-Counter con otro G-Counter. Si el otro objeto no es un `GCounter`, lanza una excepción."
+}
